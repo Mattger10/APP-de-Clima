@@ -1,0 +1,171 @@
+.fondo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: 80px;
+}
+
+
+.button {
+  height: 2.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e80a4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.error {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.weatherInfo {
+  margin-top: 11rem;
+  width: 35rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherInfo h1 {
+  position: absolute;
+  font-size: 3rem;
+  margin-top: -30rem;
+}
+
+.weatherInfo h2 {
+  position: absolute;
+  font-size: 7rem;
+  margin-top: -5rem;
+  margin-right: -10rem;
+}
+
+.clima {
+  position: absolute;
+  font-size: 2rem;
+  margin-top: 8rem;
+  font-weight: bold;
+}
+
+.weatherInfo img {
+  margin-top: 10px;
+}
+
+.cuadro {
+  position: absolute;
+  border: 1px solid white;
+  background-color: #0084ff;
+  z-index: -1;
+  width: 23rem;
+  height: 40rem;
+  border-radius: 1rem;
+  filter: blur(2px);
+}
+
+.imgIco {
+  position: absolute;
+  z-index: 1;
+  width: 7rem;
+  height: 7rem;
+  top: 16.1rem;
+  right: 16rem;
+}
+
+.logo {
+  width: 15rem;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+}
+
+.App {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #0084ff;
+}
+
+.envuelve{
+  position: absolute;
+  border: 1px solid #fff;
+  margin-bottom: -30rem;
+  border-radius: 1rem;
+}
+
+.minMax {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.minMax2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+ 
+}
+
+.label {
+  margin: 15px;
+  margin-bottom: -1rem;
+  font-size: 25px;
+}
+
+.labelP {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
+ }
+ 
+ .input {
+  width: 23rem;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: #0084ff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(1, 4, 168, 0.1);
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+ }
+ 
+ 
