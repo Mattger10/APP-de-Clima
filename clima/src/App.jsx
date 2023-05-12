@@ -117,10 +117,10 @@ const App = () => {
             </div>
             <div className={styles.minMax2}>
               <p className={styles.labelP}>
-                {Math.floor(weather.main.temp_max)}°
+                {Math.floor(weather.main.temp_min)}°
               </p>
               <p className={styles.labelP}>
-                {Math.floor(weather.main.temp_min)}°
+                {Math.floor(weather.main.temp_max)}°
               </p>
               <p className={styles.labelP}>{weather.main.humidity}%</p>
             </div>
