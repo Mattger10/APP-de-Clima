@@ -1,3 +1,8 @@
+.blur {
+  filter: blur(5px); /* Puedes ajustar el valor de desenfoque según tus preferencias */
+}
+
+
 .fondo {
   display: flex;
   justify-content: center;
@@ -15,19 +20,38 @@
 }
 
 .weatherInfo {
-  margin-top: 11rem;
-  width: 35rem;
-  height: 20rem;
+  margin-top: 48rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  z-index: -1;
+  width: 23rem;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+.cuadro {
+  position: absolute;
+  border: 1px solid white;
+  background-color: #0084ff;
+  z-index: -1;
+  width: 23rem;
+  height: 40rem;
+  border-radius: 1rem;
+  filter: blur(5px);
 }
 
 .weatherInfo h1 {
-  position: absolute;
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
   margin-top: -30rem;
+  width: 20rem;
+  word-wrap: break-word; 
+  font-weight: bold;
 }
 
 .weatherInfo h2 {
@@ -48,24 +72,16 @@
   margin-top: 10px;
 }
 
-.cuadro {
-  position: absolute;
-  border: 1px solid white;
-  background-color: #0084ff;
-  z-index: -1;
-  width: 23rem;
-  height: 40rem;
-  border-radius: 1rem;
-  filter: blur(2px);
-}
 
 .imgIco {
   position: absolute;
   z-index: 1;
-  width: 7rem;
-  height: 7rem;
-  top: 16.1rem;
-  right: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  top: 9.6rem;
+  right: 13rem;
 }
 
 .logo {
@@ -156,5 +172,15 @@
   height: 1rem;
  }
  
- @media (max-width: 640px) {
+ @media (max-width: 768px) {
+  .imgIco {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    top: 9.5rem;
+    right: 13rem;
+  }
  }
