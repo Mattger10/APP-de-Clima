@@ -9,18 +9,6 @@
   margin: 80px;
 }
 
-
-.button {
-  height: 2.5rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #e80a4d;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-
 .error {
   color: #ff0000;
   font-weight: bold;
@@ -81,9 +69,9 @@
 }
 
 .logo {
-  width: 15rem;
+  width: 10rem;
   margin-top: 5rem;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
 }
 
 .App {
@@ -168,4 +156,5 @@
   height: 1rem;
  }
  
- 
+ @media (max-width: 640px) {
+ }

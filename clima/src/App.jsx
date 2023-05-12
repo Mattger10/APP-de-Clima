@@ -10,11 +10,17 @@ registerLocale(es);
 
 const weatherImages = {
   "clear sky":
-    "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Fnublado.png?alt=media&token=7acca637-dc3e-4020-9e02-41cd2cf81855",
-  "scattered clouds": "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Fnublado.png?alt=media&token=7acca637-dc3e-4020-9e02-41cd2cf81855",  
-  cloudy: "url-de-la-imagen-para-nublado",
-  "broken clouds": "url-de-la-imagen-para-nubes-parcialmente-nublado",
-  // Agrega aquí el resto de correspondencias para los demás tipos de tiempo
+    "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Fsol.png?alt=media&token=87a71030-2214-4871-bf5b-9d202b7faa26", 
+
+  "cloudy": "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Fnublado.png?alt=media&token=7acca637-dc3e-4020-9e02-41cd2cf81855",
+
+  "broken clouds": "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Fparcialmente%20nublado.png?alt=media&token=235d2efa-eb2d-4a6b-90ab-323c73eda12c",
+
+  "moderate rain": "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20clima%2Flluvia%20moderada.png?alt=media&token=6a2b6918-12fc-4a53-993b-6866b4fd22c9",
+
+
+  
+  
 };
 
 const App = () => {
@@ -121,7 +127,7 @@ const App = () => {
           </div>
           <img
             className={styles.imgIco}
-            src={weatherImage}
+            src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
             alt="weather icon"
           />
           <div

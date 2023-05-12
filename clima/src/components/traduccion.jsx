@@ -9,7 +9,7 @@ const getWeatherDescription = (description) => {
       case "moderate rain":
         return "Lluvia moderada";
       case "overcast clouds":
-        return "Despejado";
+        return "Nublado";
       case "fog":
         return "Neblina";
       case "light rain":
